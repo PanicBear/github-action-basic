@@ -1,0 +1,14 @@
+name: 'basic-github-action'
+description: 'github action sample'
+inputs:
+  github-token:
+    description: 'Your GitHub personal access token'
+    required: true
+    default: ${{ github.token }}
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: refresh-sw
+  color: orange
