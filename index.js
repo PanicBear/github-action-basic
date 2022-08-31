@@ -8,6 +8,7 @@ const core = require('@actions/core');
 
     core.info(`Action is working`);
     core.info(`id token received ? ${Boolean(myToken)}`);
+    core.info(`is updated ? ${true}`);
     // write github actions here
   } catch (error) {
     core.setFailed(error.message);
